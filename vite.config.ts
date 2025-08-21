@@ -9,6 +9,13 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    allowedHosts: [
+      "mobile-sec-guardian.onrender.com",
+      "localhost",
+      "127.0.0.1"
+    ]
+  },
   plugins: [
     react(),
     mode === 'development' &&
