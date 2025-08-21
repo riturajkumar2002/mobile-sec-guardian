@@ -21,6 +21,7 @@ import {
 const Index = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [triggerScan, setTriggerScan] = useState(false);
+
   const features = [
     {
       icon: <Shield className="w-6 h-6" />,
