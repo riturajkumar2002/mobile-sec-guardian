@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mobile-security-guardian
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
+    branch: main
+
